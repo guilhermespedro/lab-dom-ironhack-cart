@@ -1,3 +1,23 @@
+const body = document.body;
+
+let productPrice = Number(document.getElementById("cost").innerHTML);
+
+let productQuantity = Number(document.getElementById('qty').innerHTML);
+
+let totalProduct = document.getElementById('total').innerHTML;
+
+const buttonCalculate = document.getElementById("successbutton");
+
+buttonCalculate.addEventListener("click" , function(event) {
+  totalProduct = productPrice * productQuantity;
+});
+
+
+
+
+
+
+
 function deleteItem(e){
 
 }
